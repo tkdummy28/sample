@@ -1,0 +1,65 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BLOB_CONN_STR = os.getenv("BLOB_CONN_STR")
+
+DOC_INTEL_ENDPOINT = os.getenv("DOC_INTEL_ENDPOINT")
+DOC_INTEL_KEY = os.getenv("DOC_INTEL_KEY")
+
+SEARCH_ENDPOINT = os.getenv("SEARCH_ENDPOINT")
+SEARCH_KEY = os.getenv("SEARCH_KEY")
+SEARCH_INDEX = os.getenv("SEARCH_INDEX")
+
+FOUNDRY_ENDPOINT = os.getenv("FOUNDRY_ENDPOINT")
+FOUNDRY_API_KEY = os.getenv("FOUNDRY_API_KEY")
+FOUNDRY_DEPLOYMENT_NAME = os.getenv("FOUNDRY_DEPLOYMENT_NAME")
+API_VERSION = "2024-12-01-preview"
+EMBEDDING_MODEL = os.getenv("EMBEDDING_DEPLOYMENT")
+
+
+from openai import AzureOpenAI
+def get_foundry_client():
+    return AzureOpenAI(
+        azure_endpoint=FOUNDRY_ENDPOINT,
+        api_key=FOUNDRY_API_KEY,
+        api_version=API_VERSION,
+    )
+
+
+# print("BLOB_CONN_STR:" , BLOB_CONN_STR)
+# print("DOC_INTEL_ENDPOINT:" , DOC_INTEL_ENDPOINT)
+# print("DOC_INTEL_KEY:" , DOC_INTEL_KEY)
+# print("SEARCH_ENDPOINT:" , SEARCH_ENDPOINT)
+# print("SEARCH_KEY:" , SEARCH_KEY)
+# print("SEARCH_INDEX:" , SEARCH_INDEX)
+# print("FOUNDRY_ENDPOINT:" , FOUNDRY_ENDPOINT)
+# print("FOUNDRY_API_KEY:" , FOUNDRY_API_KEY)
+# print("FOUNDRY_DEPLOYMENT_NAME:" , FOUNDRY_DEPLOYMENT_NAME)
+# print("EMBEDDING_MODEL:" , EMBEDDING_MODEL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print("BLOB_CONN_STR:" , BLOB_CONN_STR)
+# print("DOC_INTEL_ENDPOINT:" , DOC_INTEL_ENDPOINT)
+# print("DOC_INTEL_KEY:" , DOC_INTEL_KEY)
+# print("SEARCH_ENDPOINT:" , SEARCH_ENDPOINT)
+# print("SEARCH_KEY:" , SEARCH_KEY)
+# print("SEARCH_INDEX:" , SEARCH_INDEX)
+# print("FOUNDRY_ENDPOINT:" , FOUNDRY_ENDPOINT)
+# print("FOUNDRY_API_KEY:" , FOUNDRY_API_KEY)
+# print("FOUNDRY_DEPLOYMENT_NAME:" , FOUNDRY_DEPLOYMENT_NAME)
+# print("EMBEDDING_MODEL:" , EMBEDDING_MODEL)
+
+

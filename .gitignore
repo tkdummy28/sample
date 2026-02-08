@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets / local config
+.env
+local.settings.json
+
+
+# Data & outputs
+data/
+output/
+
+# Backup / temp
+bak/
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
